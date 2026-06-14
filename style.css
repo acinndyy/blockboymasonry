@@ -334,3 +334,22 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.hero-title span{
+  display:block;
+  color:white;
+  font-size:clamp(55px,12vw,130px);
+  font-weight:900;
+}
+
+.hero-title strong{
+  display:block;
+  color:var(--gold);
+  font-size:clamp(55px,12vw,130px);
+  font-weight:900;
+}
+
+.tagline{
+  font-family:Georgia,serif;
+  font-size:clamp(28px,5vw,54px);
+  font-style:italic;
+}
