@@ -21,29 +21,37 @@ a{
 }
 
 .topbar{
-  width:100%;
-  background:#050505;
-  border-bottom:2px solid var(--gold);
-  padding:18px 5%;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:15px;
+  padding:20px 30px;
+  background:#050505;
+  border-bottom:2px solid #D4A62A;
 }
 
 .menu{
-  color:var(--gold);
-  font-size:34px;
+  color:#D4A62A;
+  font-size:42px;
   font-weight:bold;
 }
 
 .brand{
-  font-size:clamp(28px,6vw,54px);
+  font-size:48px;
   font-weight:900;
+  color:white;
 }
 
 .brand span{
-  color:var(--gold);
+  color:#D4A62A;
+}
+
+.top-call{
+  border:2px solid #D4A62A;
+  color:#D4A62A;
+  padding:14px 24px;
+  border-radius:10px;
+  font-weight:900;
+  font-size:22px;
 }
 
 .phone{
