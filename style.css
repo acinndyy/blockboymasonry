@@ -359,3 +359,100 @@ footer {
   --orange: #d9822b;
   --light: #f5f1ec;
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #080808;
+  color: white;
+}
+
+.header {
+  background: #050505;
+  border-bottom: 3px solid #b40000;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 120px;
+}
+
+.call-btn {
+  background: #b40000;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+    url("brick-background.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #c40000;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.hero h2 {
+  font-size: 34px;
+  color: white;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #ddd;
+}
+
+.red-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #b40000;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+.section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #111;
+  border: 2px solid #b40000;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(180,0,0,.4);
+}
+
+.card h3 {
+  color: #c40000;
+}
+
+.contact-box {
+  background: #111;
+  border-left: 6px solid #b40000;
+  padding: 25px;
+}
