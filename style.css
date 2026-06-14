@@ -265,4 +265,15 @@ footer{
     width:100%;
     max-width:350px;
   }
+.topbar{
+  display:flex !important;
+  flex-direction:row !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  padding:18px 24px !important;
+  background:#050505;
+  border-bottom:2px solid #D4A62A;
 }
+
+.menu{
+  color:#D4A62
