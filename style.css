@@ -199,6 +199,11 @@ footer{
 
   .service-line{
     font-size:18px;
-  }
+  
+  .logo{
+  width:100%;
+  max-width:900px;
+  height:auto;
+  display:block;
+  margin:0 auto 30px;
 }
-
