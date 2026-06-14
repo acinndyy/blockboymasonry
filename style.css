@@ -353,3 +353,9 @@ footer {
   font-size:clamp(28px,5vw,54px);
   font-style:italic;
 }
+:root {
+  --dark: #1f1f1f;
+  --stone: #6b6258;
+  --orange: #d9822b;
+  --light: #f5f1ec;
+}
