@@ -455,4 +455,47 @@ body {
   background: #111;
   border-left: 6px solid #b40000;
   padding: 25px;
+  body {
+    background: #0a0a0a;
+    color: #fff;
+}
+
+.hero {
+    background:
+      linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+      url('brick-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-title strong {
+    color: #c40000;
+    text-shadow: 0 0 10px rgba(196,0,0,.5);
+}
+
+.tagline {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.feature {
+    background: #111;
+    border: 2px solid #c40000;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(196,0,0,.3);
+}
+
+.gallery-card {
+    border: 2px solid #c40000;
+    background: #111;
+}
+
+.top-call,
+.btn,
+a.cta {
+    background: #c40000;
+    color: white;
+    border-radius: 8px;
+}
 }
