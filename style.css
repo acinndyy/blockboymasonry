@@ -1,4 +1,6 @@
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+}
 
 body{
   margin:0;
@@ -7,166 +9,219 @@ body{
   color:white;
 }
 
-a{text-decoration:none;color:inherit}
+a{
+  color:inherit;
+  text-decoration:none;
+}
 
 :root{
-  --red:#b40000;
-  --red2:#e00000;
   --gold:#d6a72c;
+  --gold2:#f2c75c;
   --black:#050505;
 }
 
 .topbar{
+  width:100%;
   background:#050505;
-  border-bottom:3px solid var(--red);
-  padding:16px 6%;
+  border-bottom:2px solid var(--gold);
+  padding:18px 5%;
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
+  gap:15px;
+}
+
+.menu{
+  color:var(--gold);
+  font-size:34px;
+  font-weight:bold;
 }
 
 .brand{
-  font-size:28px;
+  font-size:clamp(28px,6vw,54px);
   font-weight:900;
 }
 
-.brand span{color:var(--red2)}
+.brand span{
+  color:var(--gold);
+}
 
-.top-call{
-  background:var(--red);
-  color:white;
-  padding:12px 18px;
+.phone{
+  border:2px solid var(--gold);
+  color:var(--gold2);
+  padding:12px 20px;
   border-radius:8px;
   font-weight:900;
+  white-space:nowrap;
 }
 
 .hero{
-  width:100%;
-  max-width:1400px;
-  margin:0 auto;
   text-align:center;
-  padding:30px 20px;
+  padding:55px 6% 65px;
+  background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.9)),
+    repeating-linear-gradient(0deg,#171717 0 34px,#0d0d0d 35px 42px);
+  border-bottom:1px solid var(--gold);
 }
 
-
-.service-area{
-  color:white;
+.area{
   text-transform:uppercase;
-  letter-spacing:4px;
+  letter-spacing:8px;
   font-weight:900;
+  font-size:clamp(16px,3vw,28px);
 }
 
-.hero-title span{
+.hero h1{
+  margin:25px 0 10px;
+  line-height:.95;
+}
+
+.hero h1 span{
   display:block;
-  font-size:clamp(45px,12vw,120px);
-  font-weight:900;
+  font-size:clamp(58px,15vw,150px);
+  font-weight:1000;
   color:white;
 }
 
-.hero-title strong{
+.hero h1 strong{
   display:block;
-  font-size:clamp(45px,12vw,120px);
-  font-weight:900;
-  color:var(--red2);
-  text-shadow:0 0 15px black;
+  font-size:clamp(58px,15vw,150px);
+  font-weight:1000;
+  color:var(--gold);
 }
 
 .tagline{
-  font-size:clamp(24px,5vw,48px);
   font-family:Georgia,serif;
   font-style:italic;
-  color:white;
+  font-size:clamp(28px,6vw,58px);
+  margin:20px 0;
 }
 
-.service-line{
-  font-size:22px;
-  font-weight:900;
+.services{
   text-transform:uppercase;
-}
-
-.hero-buttons{
-  display:flex;
-  gap:18px;
-  justify-content:center;
-  flex-wrap:wrap;
-  margin-top:30px;
-}
-
-.hero-buttons a,
-.work-title a{
-  background:var(--red);
-  color:white;
-  padding:14px 22px;
-  border-radius:8px;
   font-weight:900;
-  border:2px solid white;
+  font-size:clamp(20px,4vw,34px);
+  line-height:1.4;
+}
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+  margin-top:35px;
+}
+
+.buttons a{
+  background:linear-gradient(#f2c75c,#c99722);
+  color:#100900;
+  padding:18px 35px;
+  border-radius:8px;
+  font-size:clamp(18px,3vw,28px);
+  font-weight:1000;
 }
 
 section{
-  padding:55px 6%;
+  padding:60px 6%;
 }
 
-.quality,.contact{
-  background:#0b0b0b;
+.quality{
+  text-align:center;
+  background:#090909;
+  border-bottom:1px solid var(--gold);
 }
 
 h2{
-  color:var(--red2);
-  font-size:clamp(30px,5vw,48px);
+  color:var(--gold);
   text-transform:uppercase;
-  text-align:center;
+  font-size:clamp(30px,5vw,48px);
+  margin:0 0 20px;
 }
 
-.quality>p{
+.quality > p{
   max-width:850px;
-  margin:0 auto 35px;
-  text-align:center;
-  font-size:20px;
+  margin:0 auto 45px;
+  font-size:clamp(18px,3vw,24px);
+  line-height:1.5;
 }
 
-.feature-grid,
-.gallery{
+.cards{
+  max-width:1200px;
+  margin:auto;
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
+  gap:25px;
 }
 
-.feature,
-.gallery-card{
-  background:#111;
-  border:2px solid var(--red);
-  border-radius:12px;
+.card{
   padding:25px;
-  text-align:center;
-  box-shadow:0 0 18px rgba(180,0,0,.35);
+  border-left:1px solid rgba(214,167,44,.5);
 }
 
-.feature h3{
-  color:var(--red2);
+.card{
+  font-size:42px;
+}
+
+.card h3{
+  color:var(--gold);
   text-transform:uppercase;
+  font-size:22px;
+  margin:15px 0 10px;
+}
+
+.card p{
+  font-size:17px;
+  line-height:1.4;
 }
 
 .work{
   background:#050505;
 }
 
-.work-title{
+.section-head{
+  max-width:1200px;
+  margin:auto;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  gap:15px;
+  gap:20px;
   flex-wrap:wrap;
 }
 
-.gallery-card{
-  min-height:170px;
-  color:white;
+.section-head a{
+  border:2px solid var(--gold);
+  color:var(--gold2);
+  padding:12px 24px;
+  border-radius:6px;
+  font-weight:900;
+  text-transform:uppercase;
+}
+
+.gallery{
+  max-width:1200px;
+  margin:25px auto 0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.photo{
+  min-height:180px;
+  border:2px solid var(--gold);
+  border-radius:10px;
+  background:linear-gradient(135deg,#3a3a3a,#090909);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--gold2);
   font-size:22px;
   font-weight:900;
 }
 
 .contact{
   text-align:center;
+  background:#090909;
+  border-top:1px solid var(--gold);
 }
 
 .contact p{
@@ -174,53 +229,32 @@ h2{
 }
 
 .contact a{
-  color:white;
+  color:var(--gold2);
 }
 
 footer{
   background:#000;
-  border-top:3px solid var(--red);
   text-align:center;
-  padding:24px;
+  padding:25px;
   color:#aaa;
+  border-top:1px solid var(--gold);
 }
 
-@media(max-width:600px){
+@media(max-width:700px){
   .topbar{
     flex-direction:column;
-    gap:12px;
   }
 
-  .hero{
-    padding:60px 5%;
+  .phone{
+    font-size:16px;
   }
 
-  .service-line{
-    font-size:18px;
-  
-.logo{
-  width:100%;
-  max-width:1100px;
-  height:auto;
-  display:block;
-  margin:0 auto;
-}
-main,
-section,
-footer{
-  width:100%;
-  max-width:1400px;
-  margin:0 auto;
-}
+  .area{
+    letter-spacing:5px;
+  }
 
-.feature-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-}
-
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
+  .buttons a{
+    width:100%;
+    max-width:350px;
+  }
 }
