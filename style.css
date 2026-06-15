@@ -36,24 +36,21 @@ a{
 }
 
 .brand{
-  font-size:48px;
-  font-weight:900;
-  color:white;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    max-width: 120px;
 }
 
 .brand span{
-  color:#D4A62A;
+    font-size: 16px !important;
 }
 
 .top-call{
-  border:2px solid #D4A62A;
-  color:#D4A62A;
-  padding:14px 24px;
-  border-radius:10px;
-  font-weight:900;
-  font-size:22px;
+    width: 65px !important;
+    font-size: 10px !important;
+    padding: 4px !important;
+    line-height: 1.1 !important;
 }
-
 .phone{
   border:2px solid var(--gold);
   color:var(--gold2);
