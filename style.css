@@ -246,44 +246,45 @@ footer{
 }
 
 .topbar{
-  display:flex;
+  display:grid;
+  grid-template-columns:50px 1fr 100px;
   align-items:center;
-  justify-content:space-between;
   gap:10px;
-  padding:15px;
+  padding:12px;
+  background:#050505;
+  border-bottom:2px solid #D4A62A;
 }
 
 .menu{
   color:#D4A62A;
-  font-size:26px;
+  font-size:28px;
   font-weight:bold;
-  flex:0 0 auto;
+  text-align:left;
 }
 
 .brand{
-  flex:1;
   text-align:center;
-  font-size:18px !important;
-  line-height:.95 !important;
-  max-width:none !important;
-  white-space:normal;
+  font-size:18px;
+  font-weight:bold;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
 
 .brand span{
-  font-size:18px !important;
-  display:block;
+  display:inline;
+  font-size:18px;
 }
 
 .phone,
 .top-call{
-  flex:0 0 auto;
-  width:72px !important;
-  font-size:11px !important;
-  padding:6px 5px !important;
-  line-height:1.1 !important;
-  white-space:normal !important;
-  text-align:center !important;
-  border:2px solid #D4A62A !important;
-  border-radius:10px !important;
-  color:#f2c75c !important;
+  width:100px;
+  padding:8px 4px;
+  font-size:13px;
+  line-height:1.1;
+  text-align:center;
+  border:2px solid #D4A62A;
+  border-radius:10px;
+  color:#f2c75c;
+  white-space:normal;
 }
