@@ -249,10 +249,8 @@ footer{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:12px;
-  padding:12px 14px;
-  background:#050505;
-  border-bottom:2px solid #D4A62A;
+  gap:10px;
+  padding:15px;
 }
 
 .menu{
