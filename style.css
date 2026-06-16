@@ -57,12 +57,11 @@ a{
 }
 
 /* HERO */
-<div class="hero-line"></div>
 .hero{
   text-align:center;
-  padding:45px 5% 55px;
+  padding:55px 6% 65px;
   background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.85)),
+    linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.85)),
     url("blocks.jpg");
   background-size:cover;
   background-position:center;
