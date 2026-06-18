@@ -65,7 +65,7 @@ a{
     url("blocks.PNG");
   background-size:cover;
   background-position:center;
-  border-bottom:1px solid var(--gold);
+  border-bottom:1px solid #D4A62A;
 }
 
 .area{
