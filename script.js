@@ -1,0 +1,1 @@
+console.log('BlockBoy Masonry LLC website ready');
